@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  alarm-app:
+    build: .
+    container_name: python-alarm
+    volumes:
+      - .:/app
+    stdin_open: true
+    tty: true
